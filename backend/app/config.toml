@@ -1,0 +1,11 @@
+[model]
+MODEL_NAME = "sentence-transformers/paraphrase-MiniLM-L6-v2"
+
+[text_splitter]
+CHUNK_SIZE = 250
+CHUNK_OVERLAP = 20
+
+[pinecone]
+index="sarvam-ai-assignment"
+namespace="physics-ncert"
+top_k=4
