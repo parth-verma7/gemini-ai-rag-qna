@@ -1,0 +1,9 @@
+pypdf2
+toml
+langchain
+transformers
+torch
+python-dotenv
+pinecone-client
+google-generativeai
+"fastapi[standard]"
