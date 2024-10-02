@@ -25,7 +25,8 @@ class QueryRequest(BaseModel):
 @app.post("/query")
 async def query(request: QueryRequest):
     query=request.query
-    most_similar, llm_response = server.query_results(query)
-    text_content = llm_response.text#._result['candidates'][0]['content']['parts'][0]['text']
-    final_result = text_content # + str(most_similar)
-    return {"text": f"{final_result}"}
+    llm_response = server.query_results(query)
+    try:
+        return {"text": f"{llm_response.text}"}
+    except:
+        return {"text": f"{llm_response}"}

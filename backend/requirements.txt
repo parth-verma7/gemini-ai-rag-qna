@@ -6,4 +6,7 @@ torch
 python-dotenv
 pinecone-client
 google-generativeai
-"fastapi[standard]"
+fastapi[standard]
+guardrails-ai
+streamlit
+pydub
