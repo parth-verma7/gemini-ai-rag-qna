@@ -10,9 +10,7 @@ def gemini_response(query: str, vectorDB_responses) -> str:
     response = model.generate_content(f'''
         User's Query - {query}
         Relevant Response received from Vector Database - {vectorDB_responses}
-        You need to frame this response into complete sentences.
-        Ensure that the exact meaning of response does not change and try to make only lil modifications in the response.
-        Also if the query is present in the response, try to frame response as an answer of query but not displaying the query as it is.
+        You need to filter out the exact answer of the user query and frame the exact response into complete sentences.
     ''')
 
     return response
