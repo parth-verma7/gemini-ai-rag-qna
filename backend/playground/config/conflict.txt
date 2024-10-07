@@ -1,0 +1,7 @@
+langchain-google-vertexai 0.1.0 requires langchain-core<0.2,>=0.1.27, but you have langchain-core 0.2.0 which is incompatible.
+
+langchain-community 0.2.17 requires langchain-core<0.3.0,>=0.2.39, but you have langchain-core 0.2.0 which is incompatible.
+
+
+Cannot use nemoguardrails in gemini because that requires vertex ai setup account which I cannot create because I have no credit card
+Using openai requires its key which I don't have! lol

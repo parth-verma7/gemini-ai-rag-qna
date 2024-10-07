@@ -1,0 +1,39 @@
+models:
+  - type: main
+    engine: vertexai
+    model: gemini-1.5-flash
+
+rails:
+  input:
+    flows:
+      - self check input
+      # - check jailbreak
+      # - check greetings
+      # - mask sensitive data on input
+      
+
+  output:
+    flows:
+      - self check facts
+      - self check hallucination
+      - activefence moderation
+      - gotitai rag truthcheck
+
+  config:
+    sensitive_data_detection:
+      input:
+        entities:
+          - EMAIl_ADDRESS
+          - MPIN
+          - PERSON
+
+prompts:
+  - task: self_check_input
+    content: |
+      Please review the following input for any potential issues:
+      {{user_input}}
+      Are there any problems with this input that I should be aware of?
+
+  - task: self_check_facts
+    content: |
+      Please confirm if the following information is correct: {fact}
