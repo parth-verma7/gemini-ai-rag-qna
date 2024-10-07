@@ -1,5 +1,9 @@
 # sarvam-ai-assignment
 
+## Video:
+Watch this video for more information:
+[https://www.loom.com/share/28f200d7575c4cccbf361b4835cf6271?sid=005d24d1-1fb1-41d5-af7c-5b8d317da52a](https://www.loom.com/share/28f200d7575c4cccbf361b4835cf6271?sid=005d24d1-1fb1-41d5-af7c-5b8d317da52a)
+
 Introduction: This assignment is meant to give you (i) a sense of the kind of technical work that you may work on as well as (ii) a way to make your thinking visible to us. We want to ensure that we are as much a fit for you as much as we would want you to be a fit for the organization. 
 
 Important things to keep in mind: 
